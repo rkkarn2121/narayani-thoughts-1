@@ -2,7 +2,7 @@ import './globals.css'; // <-- Fix here!
 import Navbar from '../components/Navbar/Navbar';
 import TrendingCarousel from "../components/Trending/TrendingCarousel";
 import HighlightsSection from '../components/Highlights/HighlightsSection';
-import CategoryGrid from "../components/CategoryGrid/CategoryGrid";
+import CategorySection from "../components/CategoryGrid/CategorySection";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Navbar />
         <TrendingCarousel />
         <HighlightsSection />
-        <CategoryGrid />
+        <CategorySection />
         <main className="min-h-[80vh]">{children}</main>
          
       </body>
